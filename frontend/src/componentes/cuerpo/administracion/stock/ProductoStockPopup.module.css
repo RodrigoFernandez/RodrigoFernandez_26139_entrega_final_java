@@ -1,0 +1,173 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.modal-producto {
+    z-index: 1000;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    border: none;
+    border-radius: 0.5em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: var(--color-fondo);
+}
+
+.modal-producto::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.modal-producto-contenido {
+    /*padding: 2em;*/
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+}
+
+.modal-imagen {
+    text-align: center;
+}
+
+.modal-imagen > img {
+    max-width: 10em;
+    height: auto;
+}
+
+.modal-producto-header {
+    margin: 0.0625em;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+
+.modal-producto-header > h3 {
+    padding-left: 0.5em;
+    /*padding-top: 0.625em;
+    padding-bottom: 0.625em;*/
+}
+
+.modal-producto-body {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+    padding-right: 1em;
+    gap: 1em;
+}
+
+ .modal-producto-fila {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding-bottom: 0.5em;
+    gap: 1em;
+ }
+
+.modal-producto-label {
+    font-weight: bold;
+    margin-bottom: 0.2em;
+}
+
+.modal-producto-valor {
+    text-align: left;
+    margin-bottom: 0.2em;
+}
+
+.modal-botonera {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5em;
+    margin-bottom: 0.625em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.modal-producto-form {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.modal-producto-campos, .modal-producto-campos-exhibidor {
+    display: grid;
+    align-items: center;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    gap: 1em;
+}
+
+.modal-producto-campos-exhibidor {
+    margin-bottom: unset;
+    grid-template-columns: 1fr 1fr;
+}
+
+.modal-producto-campos {
+    grid-template-columns: 1fr;
+}
+
+.modal-producto-fila-editor {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 0.5em;
+    gap: 1em;
+}
+
+.modal-producto-campor-editor {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1em;
+}
+
+.etiqueta-campo {
+    font-weight: bold;
+}
+
+.modal-error {
+    color: var(--color-texto-error);
+    font-size: 0.875em;
+    margin-top: 0.2em;
+}
+
+.modal-producto-form > div > label,
+.modal-producto-form > div > div > label {
+    margin-bottom: 0.2em;
+    font-weight: bold;
+}
+
+.modal-producto-form > div > input {
+    margin-bottom: 0.2em;
+    text-align: left;
+}
+
+.modal-checkbox {
+    margin-bottom: 0.2em;
+}
+
+.modal-descripcion-label {
+    height: 99%;
+    font-weight: bold;
+}
+
+.modal-botonera {
+    margin-top: 0.5em;
+}
+
+
+@media (max-width: 48em) {
+
+}
+
+@media (max-width: 30em) {
+    .modal-producto-campos-exhibidor {
+        grid-template-columns: 1fr;
+        gap: 0.5em;
+    }
+}

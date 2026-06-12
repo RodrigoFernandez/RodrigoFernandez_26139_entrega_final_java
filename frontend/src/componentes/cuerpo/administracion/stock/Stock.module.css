@@ -1,0 +1,191 @@
+.stock {
+    background-color: var(--color-fondo-section);
+    margin-left: 10em;
+    margin-right: 10em;
+    margin-top: 2em;
+}
+
+.barra-herramientas-stock {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1em;
+}
+
+.barra-busqueda-stock {
+  flex-grow: 1;
+  display: flex;
+  gap: 0.5em;
+}
+
+.barra-busqueda-stock > input{
+  flex-grow: 0.5;
+}
+
+.barra-busqueda-stock-boton-leyenda-larga {
+
+}
+.barra-busqueda-stock-boton-leyenda-corta {
+  display: none;  
+}
+
+.barra-busqueda-buscar-leyenda {
+
+}
+
+.barra-busqueda-buscar-icono {
+  display: none;  
+}
+
+.lista-stock {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.lista-stock-cabecera, .producto-stock {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 3fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0.625em;
+    padding: 0.625em 0;
+    border-bottom: 0.0625em solid color-mix(in srgb, var(--color-fondo-header-footer) 60%, black);
+    align-items: center;
+}
+
+.lista-stock-cabecera {
+    font-weight: bold;
+    background-color: var(--color-fondo-header-footer);
+}
+
+.lista-stock-cabecera-titulo {
+  padding-left: 0.625em;
+}
+
+.producto-stock-id, .producto-stock-nombre, .producto-stock-descripcion,
+.producto-stock-precio, .producto-stock-novedad, .producto-stock-destacado,
+.producto-stock-imagen, .producto-stock-acciones {
+  padding-left: 0.625em;
+}
+
+.producto-stock-novedad, .producto-stock-destacado,
+.producto-stock-imagen, .producto-stock-acciones {
+  text-align: center;
+}
+
+.producto-stock-precio {
+  text-align: right;
+}
+
+.producto-stock-descripcion {
+    padding-left: 0.625em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.lista-stock-cabecera-titulo-acciones {
+
+}
+
+.lista-stock-cuerpo {
+
+}
+
+.producto-stock {
+    
+}
+
+.producto-stock-imagen > img {
+    width: 2em;
+    height: auto;
+}
+
+/* ...existing code... */
+
+.edicion {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-image: url('/img/lapiz.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin-right: 0.25em;
+}
+
+.baja {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-image: url('/img/tacho.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin-right: 0.25em;
+}
+
+.mostrar {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-image: url('/img/ojo.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin-right: 0.25em;
+}
+
+@media (max-width: 48em) {
+
+  .stock {
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 1em;
+  }
+
+  .lista-stock-cabecera-titulo-imagen,
+  .producto-stock-imagen {
+    display: none;
+  }
+
+  .lista-stock-cabecera, .producto-stock {
+    grid-template-columns: 0.5fr 2fr 2fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 30em) {
+  .stock {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 0.5em;
+  }
+
+  .barra-busqueda-stock-boton-leyenda-larga {
+    display: none;
+  }
+  .barra-busqueda-stock-boton-leyenda-corta {
+    display: block;
+  }
+
+  .barra-busqueda-buscar-leyenda {
+    display: none;
+  }
+
+  .barra-busqueda-buscar-icono {
+    display: block;
+    width: 0.9em;
+  }
+
+  .lista-stock-cabecera-titulo-imagen,
+  .producto-stock-imagen,
+  .lista-stock-cabecera-titulo-descripcion,
+  .producto-stock-descripcion,
+  .producto-stock-novedad,
+  .lista-stock-cabecera-titulo-novedad,
+  .producto-stock-destacado,
+  .lista-stock-cabecera-titulo-destacado {
+    display: none;
+  }
+
+  .lista-stock-cabecera, .producto-stock {
+    grid-template-columns: 0.5fr 2fr 1fr 1fr;
+  }
+}
