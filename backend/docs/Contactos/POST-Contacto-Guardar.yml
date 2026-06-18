@@ -1,0 +1,23 @@
+info:
+  name: POST-Contacto-Guardar
+  type: http
+
+http:
+  method: POST
+  url: http://localhost:8080/api/contacto/guardar
+  body:
+    type: json
+    data: |-
+      {
+        "nombre":"Pedro",
+        "email":"pedro@mail.com",
+        "telefono":"4444-5555",
+        "mensaje":"Este es un mensaje de prueba"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,26 @@
+info:
+  name: POST-Producto
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost/api/productos
+  body:
+    type: json
+    data: |-
+      {
+        "nombre":"Producto Prueba",
+        "precio":11.57,
+        "esNovedad":true,
+        "esDestacado":false,
+        "imagen":"https://i.imgur.com/mifCxvU.png",
+        "descripcion":"Descripción producto prueba."
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

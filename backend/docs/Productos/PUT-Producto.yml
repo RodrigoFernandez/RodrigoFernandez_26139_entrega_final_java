@@ -1,0 +1,26 @@
+info:
+  name: PUT-Producto
+  type: http
+
+http:
+  method: PUT
+  url: http://localhost:8080/api/productos/19
+  body:
+    type: json
+    data: |-
+      {
+        "descripcion":"Ladrillo lila",
+        "esDestacado":true,
+        "esNovedad":false,
+        "id":19,
+        "imagen":"https://i.imgur.com/hxGAz5z.png",
+        "nombre":"Ladrillo lila",
+        "precio":200.55
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
