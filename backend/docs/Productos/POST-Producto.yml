@@ -5,13 +5,13 @@ info:
 
 http:
   method: POST
-  url: http://localhost/api/productos
+  url: http://localhost:8080/api/productos
   body:
     type: json
     data: |-
       {
         "nombre":"Producto Prueba",
-        "precio":11.57,
+        "precio":11.59,
         "esNovedad":true,
         "esDestacado":false,
         "imagen":"https://i.imgur.com/mifCxvU.png",
