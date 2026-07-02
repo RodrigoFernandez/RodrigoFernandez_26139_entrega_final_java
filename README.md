@@ -22,7 +22,7 @@ También se agregó la configuración necesaria para el manejo del CORS.
 
 ```mermaid
 classDiagram
-    Contacto {
+    class Contacto {
         Integer id
         String nombre
         String email
@@ -30,7 +30,7 @@ classDiagram
         String mensaje
     }
 
-    Producto {
+    class Producto {
         Integer id
         String nombre
         String descripcion
@@ -40,17 +40,17 @@ classDiagram
         Boolean esDestacado
     }
 
-    Rol {
+    class Rol {
         String nombre
     }
 
-    Usuario {
+    class Usuario {
         String nombre
         String contrasenia
         List~Rol~ roles
     }
 
-    Usuario "1" -- "*" Rol : roles
+    Usuario "1" --> "*" Rol : roles
 ```
 
 ### Frontend
