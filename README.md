@@ -18,7 +18,7 @@ Y se agregó la configuración necesaria para compilar el proyecto React, al mom
 
 También se agregó la configuración necesaria para el manejo del CORS.
 
-### Diagrama de clases
+#### Diagrama de clases
 
 ```mermaid
 classDiagram
@@ -52,6 +52,17 @@ classDiagram
 
     Usuario "1" --> "*" Rol : roles
 ```
+
+#### Construido usando las bibliotecas
+
+* spring-boot-starter-data-jpa
+* spring-boot-starter-webmvc
+* lombok
+* mysql-connector-j
+
+#### Pruebas servicio Rest
+
+En la carpeta `backend/docs` están los archivos de pruebas al servicio rest, utilizando Bruno API Client.
 
 ### Frontend
 
