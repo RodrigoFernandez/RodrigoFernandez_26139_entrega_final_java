@@ -64,6 +64,8 @@ classDiagram
 
 En la carpeta `backend/docs` están los archivos de pruebas al servicio rest, utilizando Bruno API Client.
 
+Video de pruebas: <https://youtu.be/aYPqWBxN4qg>
+
 ### Frontend
 
 El sitio consta de las siguientes secciones:
